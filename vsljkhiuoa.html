@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario HTML</title>
+    <style>
+        /* Styling di base */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB;
+        }
+
+        .mario {
+            width: 100px;
+            height: 200px;
+            position: relative;
+            background-color: #D32F2F;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .hat {
+            width: 100%;
+            height: 40%;
+            background-color: #C2185B;
+            position: absolute;
+            top: 0;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .face {
+            width: 100%;
+            height: 50%;
+            background-color: #FFCC80;
+            position: absolute;
+            top: 40%;
+            border-radius: 50%;
+        }
+
+        .eyes {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .eye {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .eye-left {
+            background-color: black;
+        }
+
+        .body {
+            width: 80%;
+            height: 40%;
+            background-color: #1976D2;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        .legs {
+            width: 80%;
+            height: 40%;
+            background-color: #388E3C;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 10px 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="mario">
+        <div class="hat"></div>
+        <div class="face">
+            <div class="eyes">
+                <div class="eye eye-left"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+        <div class="body"></div>
+        <div class="legs"></div>
+    </div>
+</body>
+</html>
